@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xs::element name="asteroidImpact">
+    <xs::complexType>
+        <xs::sequence>
+            <xs::element name="fullName"/>
+            <xs::element name="periodStart"/>
+            <xs::element name="periodEnd"/>
+            <xs::element name="possibleImpacts"/>
+            <xs::element name="cumulativeImpactProbability"/>
+            <xs::element name="asteroidVelocity"/>
+            <xs::element name="absoluteMagnitude"/>
+            <xs::element name="cumulativePalermoScale"/>
+            <xs::element name="maximumPalermoScale"/>
+        </xs::sequence>
+    </xs::complexType>
+</xs::element>

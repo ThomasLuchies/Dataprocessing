@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "impact",
+    "description": "A possible impact of an asteroid",
+    "type": "object",
+    "properties": 
+    {
+        "fullName":
+        {
+            "description": "The name of the asteroid",
+            "type": "string"
+        },
+        "periodStart": 
+        {
+            "description": "the start year of the period of which the asteroid can impact with earth",
+            "type": "number"
+        },
+        "periodEnd": 
+        {
+            "description": "the start year of the period of which the asteroid can impact with earth",
+            "type": "number"
+        },
+        "possibleImpacts": 
+        {
+            "description": "all possible impacts the asteroid can have in the given period",
+            "type": "number"
+        },
+        "cumulativeImpactProbability":
+        {
+            "description": "The probability the asteroid has to have an impact on earth",
+            "type": "number"
+        },
+        "asteroidVelocity": 
+        {
+            "description": "The velocity(speed) the asteroid has",
+            "type": "number"
+        },
+        "absoluteMagnitude":
+        {
+            "description": "the absolute magnitude the asteroid has",
+            "type": "number"
+        },
+        "cumulativePalermoScale": 
+        {
+            "description": "The cumulative classification the asteriod has on the palermo scale which determines how dangerous the asteroid impact is.",
+            "type": "number"
+        },
+        "maximumPalermoScale":
+        {
+            "description": "The maximum classification the asteriod has on the palermo scale which determines how dangerous the asteroid impact is.",
+            "type": "number"
+        }
+    },
+    "required": ["fullName", "periodStart", "peroidEnd", "possibleImpacts", "cumulativeImpactProbability", "asteroidVelocity", "absoluteMagnitude", "cumulativePalermoScale", "maximumPalermoScale"]
+}

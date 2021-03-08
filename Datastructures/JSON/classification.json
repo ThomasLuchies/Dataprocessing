@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "classification",
+    "description": "The classification of an asteroid",
+    "type": "object",
+    "properties": 
+    {
+        "neoReferenceId":
+        {
+            "description": "The id of the asteroid",
+            "type": "number"
+        },
+        "name": 
+        {
+            "description": "The name of the classification",
+            "type": "string"
+        },
+        "absoluteMagnitude": 
+        {
+            "description": "The absolute magnitude of the asteroid",
+            "type": "number"
+        },
+        "estDiameterKmMin": 
+        {
+            "description": "The minimum needed diameter in kilometers needed for an asteroid to have this classification",
+            "type": "number"
+        },
+        "estDiameterKmMax":
+        {
+            "description": "The maximum diamter in kilometers an asteroid can be to have this classification",
+            "type": "number"
+        },
+        "estDiametermMin": 
+        {
+            "description": "The minimum needed diameter in meters needed for an asteroid to have this classification",
+            "type": "number"
+        },
+        "estDiametermMax":
+        {
+            "description": "The maximum diamter in meters an asteroid can be to have this classification",
+            "type": "number"
+        },
+        "estDiameterMilesMin": 
+        {
+            "description": "The minimum needed diameter in miles needed for an asteroid to have this classification",
+            "type": "number"
+        },
+        "estDiameterMilesMax":
+        {
+            "description": "The maximum diamter in miles an asteroid can be to have this classification",
+            "type": "number"
+        },
+        "estDiameterFeetMin": 
+        {
+            "description": "The minimum needed diameter in feet needed for an asteroid to have this classification",
+            "type": "number"
+        },
+        "estDiameterFeetMax":
+        {
+            "description": "The maximum diamter in feet an asteroid can be to have this classification",
+            "type": "number"
+        }
+    },
+    "required": ["neoReferenceId", "name", "absoluteMagnitude", "estDiameterKmMin", "estDiameterKmMax", "estDiametermMin", "estDiametermMax", "estDiameterMilesMin", "estDiameterMilesMax", "estDiameterFeetMin", "estDiameterFeetMax"]
+}

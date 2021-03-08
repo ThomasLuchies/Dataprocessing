@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<xs::element name="asteroidOrbit">
+    <xs::complexType>
+        <xs::sequence>
+            <xs::element name="epoch(TPB)"/>
+            <xs::element name="orbitAxis(AU)"/>
+            <xs::element name="orbitEccentricity"/>
+            <xs::element name="orbitInclanation(deg)"/>
+            <xs::element name="periphelionArgument(deg)"/>
+            <xs::element name="nodeLongitude(deg)"/>
+            <xs::element name="meanAnomaly(deg)"/>
+            <xs::element name="absoluteMagnitude"/>
+            <xs::element name="periphelionDistance(AU)"/>
+            <xs::element name="estDiaInKM"/>
+        </xs::sequence>
+    </xs::complexType>
+</xs::element>

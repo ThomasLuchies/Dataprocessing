@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xs::element name="classification">
+    <xs::complexType>
+        <xs::sequence>
+            <xs::element name="neoReferenceID"/>
+            <xs::element name="name"/>
+            <xs::element name="absoluteMagnitute"/>
+            <xs::element name="estDiainKM(min)"/>
+            <xs::element name="estDiaInKM(max)"/>
+            <xs::element name="estDiaInM(min)"/>
+            <xs::element name="estDiaInM(max)"/>
+            <xs::element name="estDiaInMiles(min)"/>
+            <xs::element name="estDiaInMiles(max)"/>
+            <xs::element name="estDiaInFeet(min)"/>
+            <xs::element name="estDiaInFeet(max)"/>
+        </xs::sequence>
+    </xs::complexType>
+</xs::element>

@@ -1,0 +1,33 @@
+#container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#left 
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+#classificationForm
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#center, #right
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.cell 
+{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}

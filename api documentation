@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "067530d4-4431-4b05-8e9f-552f28bd65b3",
+		"name": "Asteroid APi",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/classifications",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"classifications"
+					]
+				},
+				"description": "get classification"
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8000",
+							"host": [
+								"localhost"
+							],
+							"port": "8000"
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "get orbits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/impacts",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"impacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get impacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/orbits",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"orbits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete classification entry",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/classifications/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"classifications",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete orbit entry",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/impacts/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"impacts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete impact entry",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/impacts/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"impacts",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add classification entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"neoReferenceId\": 132,\r\n\t\"name\": \"test\",\r\n\t\"absoluteMagnitude\": 943,\r\n\t\"estDiaInKmMin\": 343,\r\n\t\"estDiaInKmMax\": 434,\r\n\t\"estDiaInMMin\": 4343,\r\n\t\"estDiaInMMax\": 43434,\r\n\t\"estDiaInMilesMin\": 43,\r\n\t\"estDiaInMilesMax\": 34342,\r\n\t\"estDiaInFeetMin\": 3434,\r\n\t\"estDiaInFeetMax\": 2432\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/classifications/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"classifications",
+						""
+					]
+				},
+				"description": "\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "add orbit entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"neoReferenceId\": 132,\r\n\t\"name\": \"test\",\r\n\t\"absoluteMagnitude\": 943,\r\n\t\"estDiaInKmMin\": 343,\r\n\t\"estDiaInKmMax\": 434,\r\n\t\"estDiaInMMin\": 4343,\r\n\t\"estDiaInMMax\": 43434,\r\n\t\"estDiaInMilesMin\": 43,\r\n\t\"estDiaInMilesMax\": 34342,\r\n\t\"estDiaInFeetMin\": 3434,\r\n\t\"estDiaInFeetMax\": 2432\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8000/orbits/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"orbits",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add impact entry",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"test\",\r\n\t\"periodStart\": 4323,\r\n\t\"periodEnd\": 943,\r\n\t\"possibleImpacts\": 343,\r\n\t\"cumulativeImpactProbability\": 434,\r\n\t\"asteroidVelocity\": 4343,\r\n\t\"cumulativePalermoScale\": 43434,\r\n\t\"maximumPalermoScale\": 43,\r\n    \"absoluteMagnitude\": 432\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/impacts/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"impacts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change classifcation entry",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"test2\",\r\n\t\"epoch\": 943,\r\n\t\"orbitAxis\": 343,\r\n\t\"orbitEccentricity\": 434,\r\n\t\"orbitInclanation\": 4343,\r\n\t\"periphelionArgument\": 43434,\r\n\t\"nodeLongitude\": 43,\r\n\t\"meanAnomaly\": 34342,\r\n\t\"absoluteMagnitude\": 3434,\r\n\t\"periphelionDistance\": 2432\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/classifications/2/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"classifications",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "change orbit entry",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"test2\",\r\n\t\"epoch\": 943,\r\n\t\"orbitAxis\": 343,\r\n\t\"orbitEccentricity\": 434,\r\n\t\"orbitInclanation\": 4343,\r\n\t\"periphelionArgument\": 987,\r\n\t\"nodeLongitude\": 43,\r\n\t\"meanAnomaly\": 34342,\r\n\t\"absoluteMagnitude\": 3434,\r\n\t\"periphelionDistance\": 2432\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/orbits/2/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"orbits",
+						"2",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add impact entry",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"test2\",\r\n\t\"periodStart\": 4323,\r\n\t\"periodEnd\": 943,\r\n\t\"possibleImpacts\": 789,\r\n\t\"cumulativeImpactProbability\": 434,\r\n\t\"asteroidVelocity\": 4343,\r\n\t\"cumulativePalermoScale\": 12,\r\n\t\"maximumPalermoScale\": 43,\r\n    \"absoluteMagnitude\": 432\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/impacts/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"impacts",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

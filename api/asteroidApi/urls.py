@@ -1,12 +1,11 @@
 from django.urls import include, path
 from rest_framework import routers
 from . import views
-from rest_framework.urlpatterns import format_suffix_patterns
 
 router = routers.DefaultRouter()
-router.register(r'classification', views.ClassificationViewSet)
-router.register(r'impact', views.ImpactViewSet)
-router.register(r'orbit', views.OrbitViewSet)
+router.register(r'classifications', views.ClassificationViewSet)
+router.register(r'impacts', views.ImpactViewSet)
+router.register(r'orbits', views.OrbitViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

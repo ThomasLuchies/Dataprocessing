@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "title": "impact",
-    "description": "A possible impact of an asteroid",
+    "title": "asteroid",
+    "description": "A near earth asteroid",
     "type": "object",
     "properties": 
     {

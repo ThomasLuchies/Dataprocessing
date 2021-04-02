@@ -1,9 +1,10 @@
+import kwargs as kwargs
 from django.shortcuts import render
 from rest_framework import viewsets
 from .serializer import ClassificationSerializer
 from .serializer import ImpactSerializer
 from .serializer import OrbitSerializer
-from .models import Classification
+from .models import Classifications
 from .models import Impacts
 from .models import Orbits
 from rest_framework.renderers import JSONRenderer
@@ -11,7 +12,7 @@ from rest_framework_xml.renderers import XMLRenderer
 from rest_framework.views import APIView
 
 class ClassificationViewSet(viewsets.ModelViewSet):
-    queryset = Classification.objects.all()
+    queryset = Classifications.objects.all()
     serializer_class = ClassificationSerializer
     renderer_classes = [JSONRenderer, XMLRenderer]
 

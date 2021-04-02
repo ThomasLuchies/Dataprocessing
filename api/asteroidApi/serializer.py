@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from .models import Classification, Impacts, Orbits
+from .models import Classifications, Impacts, Orbits
 
 
 class ClassificationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Classification
+        model = Classifications
         fields = (
         'neoReferenceId', 'name', 'absoluteMagnitude', 'estDiaInKmMin', 'estDiaInKmMax', 'estDiaInMMin', 'estDiaInMMax',
         'estDiaInMilesMin', 'estDiaInMilesMax', 'estDiaInFeetMin', 'estDiaInFeetMax')
